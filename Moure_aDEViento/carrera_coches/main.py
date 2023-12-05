@@ -24,7 +24,7 @@ def create_track(track_length: int) -> (list, list):
         Returns:
             list: Pista de carreras con árboles agregados.
         """
-        number_tress = random.randint(1, 4)
+        number_tress = random.randint(2, 5)
 
         for _ in range(number_tress):
             position_tree = random.randint(1, track_length - 1)
@@ -93,12 +93,11 @@ def race(track_length: int):
     # Crasheds cars
     crashed_1, crashed_2 = False, False
 
-    print(f'{position_1} - {position_2}')
 
     while position_1 > 0 and position_2 > 0:
 
         # Timer
-        time.sleep(1)
+        time.sleep(0.6)
 
         # Reset cars
         track_1[position_1] = '-'
@@ -134,7 +133,7 @@ def run():
     """
     Función principal que inicia la carrera con una longitud de pista de 20.
     """
-    race(30)
+    race(60)
 
 
 if __name__ == '__main__':

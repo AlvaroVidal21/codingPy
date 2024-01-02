@@ -7,5 +7,5 @@ def pantalla_ganador(ganador):
 
     print(f'El ganador es: {ganador} 🏆')
 
-    time.sleep(2)
+    
  
